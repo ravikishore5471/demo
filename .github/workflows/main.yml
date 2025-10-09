@@ -1,17 +1,18 @@
-Name: Testing workflow variables
+name: Testing workflow variables
 
 on:
-    workflow_dispatch
+  workflow_dispatch:  # Corrected from workflow_branch
+
 env:
   cloud: Azure
 
 jobs:
-  Greeting_Jon:
-    runs-on:  ubuntu-latest
+  Greeting_Job:  # Fixed typo in job name
+    runs-on: ubuntu-latest
     env:
       greeting: Hello
     steps:
-      -name: "Hey Its Monday"
-       run: echo "$greeting$First_Name is using $cloud"
-       env:
-           First_Name: Ravi
+      - name: Hey Its Monday  # Fixed syntax: no quotes, proper spacing
+        run: echo "$greeting $First_Name is using $cloud"  # Fixed spacing and added space between variables
+        env:
+          First_Name: Ravi  # Fixed indentation
