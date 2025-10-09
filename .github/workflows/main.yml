@@ -1,7 +1,7 @@
 Name: Testing workflow variables
 
 on:
-  workflow_branch
+    workflow_dispatch
 env:
   cloud: Azure
 
