@@ -22,5 +22,5 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      working-directory: .gitbub/demo
+      working-directory: .github/demo
       run: mvn -B package --file pom.xml
