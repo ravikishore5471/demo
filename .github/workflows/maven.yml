@@ -35,7 +35,7 @@ jobs:
         # Find the main JAR (excluding *-sources.jar and *-tests.jar)
         MAIN_JAR=$(ls target/*.jar | grep -v -e sources -e tests | head -1)
         echo "main_jar=$MAIN_JAR" >> $GITHUB_OUTPUT
-        echo "Selected JAR: $MAIN_JAR
+        echo "Selected JAR: $MAIN_JAR"
 
     - name: Deploy build
       uses: azure/webapps-deploy@v2
