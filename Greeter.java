@@ -1,4 +1,4 @@
-package helgrglo;
+package hello;
 
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;
